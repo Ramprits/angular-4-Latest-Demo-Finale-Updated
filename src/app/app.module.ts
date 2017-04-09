@@ -8,9 +8,7 @@ import { RouterModule } from "@angular/router";
 import { Approutes } from "./App-routing";
 import { WelcomeComponent } from "./welcome/welcome.component";
 import { NavComponent } from "./nav/nav.component";
-import { EventComponent } from "./event/event.component";
 import { EventService } from "./event/event.service";
-import { EventDetailComponent } from "./event/eventDetail/eventDetail.component";
 import { ProductComponent } from "./product/product.component";
 import { ProductDetailComponent } from "./product/productDetail/productDetail.component";
 import { ProductService } from "./product/product.service";
@@ -28,8 +26,6 @@ import { ProductService } from "./product/product.service";
     CustomerComponent,
     WelcomeComponent,
     NavComponent,
-    EventComponent,
-    EventDetailComponent,
     ProductComponent,
     ProductDetailComponent
   ],

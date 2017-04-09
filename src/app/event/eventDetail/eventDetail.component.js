@@ -12,12 +12,16 @@ var core_1 = require("@angular/core");
 var event_service_1 = require("../event.service");
 var router_1 = require("@angular/router");
 var EventDetailComponent = (function () {
-    function EventDetailComponent(eventService, route) {
+    function EventDetailComponent(eventService, route, router) {
         this.eventService = eventService;
         this.route = route;
+        this.router = router;
     }
     EventDetailComponent.prototype.ngOnInit = function () {
         this.event = this.eventService.getEvent(+this.route.snapshot.params['id']);
+    };
+    EventDetailComponent.prototype.eventBack = function () {
+        this.router.navigate(['/events/eventList']);
     };
     return EventDetailComponent;
 }());
@@ -28,7 +32,7 @@ EventDetailComponent = __decorate([
         styleUrls: ['./app/event/eventDetail/eventDetail.component.css']
     }),
     __metadata("design:paramtypes", [event_service_1.EventService,
-        router_1.ActivatedRoute])
+        router_1.ActivatedRoute, router_1.Router])
 ], EventDetailComponent);
 exports.EventDetailComponent = EventDetailComponent;
 //# sourceMappingURL=eventDetail.component.js.map

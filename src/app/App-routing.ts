@@ -9,10 +9,9 @@ import { ProductDetailComponent } from "./product/productDetail/productDetail.co
 export const Approutes: Routes = [
   { path: 'products', component: ProductComponent },
   { path: 'products/:id', component: ProductDetailComponent },
-  { path: 'events', component: EventComponent },
-  { path: 'events/:id', component: EventDetailComponent },
   { path: 'customer', component: CustomerComponent },
   { path: 'welcome', component: WelcomeComponent },
+  {path:'events',loadChildren:'app/event/event.module#EventModule'},
   { path: 'user', loadChildren: 'app/user/user.module#UserModule' },
   { path: '', redirectTo: '/welcome', pathMatch: 'full' }
 ];

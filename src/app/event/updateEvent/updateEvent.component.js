@@ -9,26 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var router_1 = require("@angular/router");
-var ProfileComponent = (function () {
-    function ProfileComponent(router) {
-        this.router = router;
+var UpdateEventComponent = (function () {
+    function UpdateEventComponent() {
     }
-    ProfileComponent.prototype.ngOnInit = function () {
+    UpdateEventComponent.prototype.ngOnInit = function () {
     };
-    ProfileComponent.prototype.cancel = function () {
-        this.router.navigate(['/events']);
-    };
-    return ProfileComponent;
+    return UpdateEventComponent;
 }());
-ProfileComponent = __decorate([
+UpdateEventComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
-        selector: 'app-profile',
-        templateUrl: './profile.component.html',
-        styleUrls: ['./profile.component.css']
+        selector: 'app-updateEvent',
+        templateUrl: './updateEvent.component.html',
+        styleUrls: ['./updateEvent.component.css']
     }),
-    __metadata("design:paramtypes", [router_1.Router])
-], ProfileComponent);
-exports.ProfileComponent = ProfileComponent;
-//# sourceMappingURL=profile.component.js.map
+    __metadata("design:paramtypes", [])
+], UpdateEventComponent);
+exports.UpdateEventComponent = UpdateEventComponent;
+//# sourceMappingURL=updateEvent.component.js.map

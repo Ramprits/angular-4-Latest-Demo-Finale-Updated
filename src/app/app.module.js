@@ -15,9 +15,7 @@ var router_1 = require("@angular/router");
 var App_routing_1 = require("./App-routing");
 var welcome_component_1 = require("./welcome/welcome.component");
 var nav_component_1 = require("./nav/nav.component");
-var event_component_1 = require("./event/event.component");
 var event_service_1 = require("./event/event.service");
-var eventDetail_component_1 = require("./event/eventDetail/eventDetail.component");
 var product_component_1 = require("./product/product.component");
 var productDetail_component_1 = require("./product/productDetail/productDetail.component");
 var product_service_1 = require("./product/product.service");
@@ -40,8 +38,6 @@ AppModule = __decorate([
             customer_component_1.CustomerComponent,
             welcome_component_1.WelcomeComponent,
             nav_component_1.NavComponent,
-            event_component_1.EventComponent,
-            eventDetail_component_1.EventDetailComponent,
             product_component_1.ProductComponent,
             productDetail_component_1.ProductDetailComponent
         ],
