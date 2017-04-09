@@ -16,7 +16,10 @@ var ProductComponent = (function () {
     }
     ProductComponent.prototype.ngOnInit = function () {
         var _this = this;
-        return this.productService.GetProducts().subscribe(function (product) { _this.ProductList = product; });
+        return this.productService.GetProducts().subscribe(function (product) {
+            // tslint:disable-next-line:no-trailing-whitespace
+            _this.ProductList = product;
+        });
     };
     return ProductComponent;
 }());

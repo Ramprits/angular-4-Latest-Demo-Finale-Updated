@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductService } from "./product.service";
-import { IProduct } from "./product.module";
+import { ProductService } from './product.service';
+import { IProduct } from './product.module';
 
 @Component({
   selector: 'app-product',
@@ -12,8 +12,10 @@ export class ProductComponent implements OnInit {
   constructor(private productService: ProductService) { }
 
   ngOnInit() {
-    return this.productService.GetProducts().subscribe(product =>
-    { this.ProductList = product });
+    return this.productService.GetProducts().subscribe(product => {
+      // tslint:disable-next-line:no-trailing-whitespace
+      this.ProductList = product;
+    });
   }
-
+// tslint:disable-next-line:eofline
 }

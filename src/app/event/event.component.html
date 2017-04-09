@@ -1,4 +1,4 @@
-<div class="col-md-5" *ngFor="let event of events">
+<div class="col-md-5 top10" *ngFor="let event of events">
   <div class="well thumbnail" [routerLink]="['/events/eventList', event.id]">
     <h2>{{event?.name}}</h2>
     <div>Date: {{event?.date}}</div>
