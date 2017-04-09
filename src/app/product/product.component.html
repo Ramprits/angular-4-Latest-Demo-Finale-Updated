@@ -1,0 +1,74 @@
+<div class="col-md-6 " *ngFor="let product of ProductList">
+  <div class="panel panel-primary thumbnail top10">
+    <div class="panel-body">
+
+      <div class="form-group">
+        <label class="control-label col-sm-4" for="ProductID">ProductID:</label>
+        <div class="col-sm-8">
+          <label class="" for="ProductID">{{product.ProductID}}</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-4" for="Name">Name:</label>
+        <div class="col-sm-8">
+          <label class="" for="Name">{{product.Name}}</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-4" for="ProductNumber">Product Number:</label>
+        <div class="col-sm-8">
+          <label class="" for="ProductNumber">{{product.ProductNumber}}</label>
+        </div>
+      </div>
+
+       <div class="form-group" *ngIf="product.Color" >
+        <label class="control-label col-sm-4" for="Color">Color:</label>
+        <div class="col-sm-8">
+          <label class="" for="Color">{{product.Color}}</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-4" for="SafetyStockLevel">SafetyStockLevel:</label>
+        <div class="col-sm-8">
+          <label class="" for="SafetyStockLevel">{{product.SafetyStockLevel}}</label>
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-4" for="ReorderPoint">ReorderPoint:</label>
+        <div class="col-sm-8">
+          <label class="" for="ReorderPoint">{{product.ReorderPoint}}</label>
+        </div>
+      </div>
+
+       <div class="form-group">
+        <label class="control-label col-sm-4" for="StandardCost">StandardCost:</label>
+        <div class="col-sm-8">
+          <label class="" for="StandardCost">{{product.StandardCost}}</label>
+        </div>
+      </div>
+
+        <div class="form-group">
+        <label class="control-label col-sm-4" for="ListPrice">ListPrice:</label>
+        <div class="col-sm-8">
+          <label class="" for="ListPrice">{{product.ListPrice}}</label>
+        </div>
+      </div>
+
+       <div class="form-group">
+        <label class="control-label col-sm-4" for="ModifiedDate">ModifiedDate:</label>
+        <div class="col-sm-8">
+          <label class="" for="ModifiedDate">{{product.ModifiedDate}}</label>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+</div>
