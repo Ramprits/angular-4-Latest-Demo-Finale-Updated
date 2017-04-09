@@ -7,3 +7,6 @@
     This launches the TypeScript compiler (tsc) to compile the application and wait for changes. 
     It also starts the lite-server and launches the browser to run the application.
 "# angular-4-Latest-Demo-Finale-Updated" 
+
+npm install --save-dev "@types/jasmine"
+npm install --save-dev
