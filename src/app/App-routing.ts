@@ -11,6 +11,7 @@ export const Approutes: Routes = [
   { path: 'events/:id', component: EventDetailComponent },
   { path: 'customer', component: CustomerComponent },
   { path: 'welcome', component: WelcomeComponent },
+  { path: 'user', loadChildren: 'app/user/user.module#UserModule' },
   { path: '', redirectTo: '/welcome', pathMatch: 'full' }
 ];
 export const AppRoutesRoutes = RouterModule.forChild(Approutes);

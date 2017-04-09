@@ -11,6 +11,7 @@ exports.Approutes = [
     { path: 'events/:id', component: eventDetail_component_1.EventDetailComponent },
     { path: 'customer', component: customer_component_1.CustomerComponent },
     { path: 'welcome', component: welcome_component_1.WelcomeComponent },
+    { path: 'user', loadChildren: 'app/user/user.module#UserModule' },
     { path: '', redirectTo: '/welcome', pathMatch: 'full' }
 ];
 exports.AppRoutesRoutes = router_1.RouterModule.forChild(exports.Approutes);
