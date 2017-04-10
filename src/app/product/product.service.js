@@ -10,11 +10,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
-var RX_1 = require("rxjs/RX");
+var Observable_1 = require("rxjs/Observable");
 var ProductService = (function () {
     function ProductService(http) {
         this.http = http;
-        this.baseURL = "app/common/product.json";
+        this.baseURL = 'app/common/product.json';
     }
     ProductService.prototype.GetProducts = function () {
         return this.http.get(this.baseURL)
@@ -24,14 +24,14 @@ var ProductService = (function () {
             .catch(this.handleError);
     };
     ProductService.prototype.getProduct = function (ProductID) {
-        return this.http.get(this.baseURL + "/" + ProductID)
+        return this.http.get(this.baseURL + '/' + ProductID)
             .map(function (res) {
             return res.json();
         })
             .catch(this.handleError);
     };
     ProductService.prototype.handleError = function (errr) {
-        return RX_1.Observable.throw(errr.statusText);
+        return Observable_1.Observable.throw(errr.statusText);
     };
     return ProductService;
 }());

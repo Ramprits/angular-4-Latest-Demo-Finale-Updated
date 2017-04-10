@@ -9,26 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var router_1 = require("@angular/router");
-var ProfileComponent = (function () {
-    function ProfileComponent(router) {
-        this.router = router;
+var FooterComponent = (function () {
+    function FooterComponent() {
     }
-    ProfileComponent.prototype.ngOnInit = function () {
+    FooterComponent.prototype.ngOnInit = function () {
     };
-    ProfileComponent.prototype.cancel = function () {
-        this.router.navigate(['/events/eventList']);
-    };
-    return ProfileComponent;
+    return FooterComponent;
 }());
-ProfileComponent = __decorate([
+FooterComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
-        selector: 'app-profile',
-        templateUrl: './profile.component.html',
-        styleUrls: ['./profile.component.css']
+        selector: 'app-footer',
+        templateUrl: './footer.component.html',
+        styleUrls: ['./footer.component.css']
     }),
-    __metadata("design:paramtypes", [router_1.Router])
-], ProfileComponent);
-exports.ProfileComponent = ProfileComponent;
-//# sourceMappingURL=profile.component.js.map
+    __metadata("design:paramtypes", [])
+], FooterComponent);
+exports.FooterComponent = FooterComponent;
+//# sourceMappingURL=footer.component.js.map

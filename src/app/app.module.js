@@ -5,6 +5,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+require("./rxjs.extension");
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms");
@@ -19,6 +20,7 @@ var event_service_1 = require("./event/event.service");
 var product_component_1 = require("./product/product.component");
 var productDetail_component_1 = require("./product/productDetail/productDetail.component");
 var product_service_1 = require("./product/product.service");
+var footer_component_1 = require("./footer/footer.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -39,7 +41,8 @@ AppModule = __decorate([
             welcome_component_1.WelcomeComponent,
             nav_component_1.NavComponent,
             product_component_1.ProductComponent,
-            productDetail_component_1.ProductDetailComponent
+            productDetail_component_1.ProductDetailComponent,
+            footer_component_1.FooterComponent
         ],
         bootstrap: [app_component_1.AppComponent]
     })

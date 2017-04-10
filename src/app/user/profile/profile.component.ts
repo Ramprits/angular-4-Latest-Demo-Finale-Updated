@@ -1,6 +1,7 @@
-import { Component, OnInit } from "@angular/core";
-import { Router } from "@angular/router";
-
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+// tslint:disable-next-line:no-unused-variable
+import { FormControl, FormGroup } from '@angular/forms';
 @Component({
   moduleId: module.id,
   selector: 'app-profile',
@@ -14,7 +15,7 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
   }
   cancel() {
-    this.router.navigate(['/events']);
+    this.router.navigate(['/events/eventList']);
   }
 
 }
