@@ -17,7 +17,7 @@ var LoginComponent = (function () {
     LoginComponent.prototype.ngOnInit = function () {
     };
     LoginComponent.prototype.cancel = function () {
-        this.router.navigate(['/events']);
+        this.router.navigate(['/events/eventList']);
     };
     return LoginComponent;
 }());
