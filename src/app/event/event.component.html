@@ -1,21 +1,25 @@
-<div class="card" *ngFor="let event of events">
-  <div class="card-block text-xs-center">
-    <div class="well thumbnail" [routerLink]="['/events/eventList', event.id]">
-      <h2>{{event?.name}}</h2>
-      <div>Date: {{event?.date}}</div>
-      <div [ngSwitch]="event?.time">
-        Time: {{event?.time}}
-        <span *ngSwitchCase="'8:00 am'" class="text-danger">(Early Start)</span>
-        <span *ngSwitchCase="'10:00 am'" class="text-danger">(Late Start)</span>
-        <span *ngSwitchDefault>(Normal Start)</span>
-      </div>
-      <div>Price: ${{event?.price}}</div>
-      <div *ngIf="event?.location">
-        <span>Location: {{event?.location?.address}}</span>
-        <span class="pad-left">{{event?.location?.city}}, {{event?.location?.country}}</span>
-      </div>
-      <div *ngIf="event?.onlineUrl">
-        Online URL: {{event?.onlineUrl}}
+<div class="row container top10">
+  <div class="col-md-6 top10" *ngFor="let event of events">
+    <div class="card">
+      <div class="card-block text-xs-center">
+        <div class="well thumbnail" [routerLink]="['/events/eventList', event.id]">
+          <h2>{{event?.name}}</h2>
+          <div>Date: {{event?.date}}</div>
+          <div [ngSwitch]="event?.time">
+            Time: {{event?.time}}
+            <span *ngSwitchCase="'8:00 am'" class="text-danger">(Early Start)</span>
+            <span *ngSwitchCase="'10:00 am'" class="text-danger">(Late Start)</span>
+            <span *ngSwitchDefault>(Normal Start)</span>
+          </div>
+          <div>Price: ${{event?.price}}</div>
+          <div *ngIf="event?.location">
+            <span>Location: {{event?.location?.address}}</span>
+            <span class="pad-left">{{event?.location?.city}}, {{event?.location?.country}}</span>
+          </div>
+          <div *ngIf="event?.onlineUrl">
+            Online URL: {{event?.onlineUrl}}
+          </div>
+        </div>
       </div>
     </div>
   </div>
